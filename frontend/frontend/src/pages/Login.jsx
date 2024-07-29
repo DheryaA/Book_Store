@@ -22,7 +22,7 @@ const Login = () => {
       if (Values.username === "" || Values.password === "") {
         alert("All fields are essential");
       } else {
-        const response = await axios.post("http://localhost:1000/api/v1/Sign-in", Values);
+        const response = await axios.post("https://book-store-8uzx.onrender.com/api/v1/Sign-in", Values);
         //console.log(response.data);
         
         dispatch(authActions.login());
