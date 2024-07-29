@@ -11,7 +11,7 @@ const AllBooks = () => {
     const fetchData = async () => {
       try {
     
-        const response = await axios.get("http://localhost:1000/api/v1/get-all-books");
+        const response = await axios.get("https://book-store-8uzx.onrender.com/api/v1/get-all-books");
 
         console.log("API Response:", response.data.data);
         setData(response.data.data);
