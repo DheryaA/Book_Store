@@ -21,7 +21,7 @@ const submit=async()=>{
       if(Values.username===""||Values.email===""|| Values.password===""||Values.address===""){
         alert("All fields are essential");
       }else{
-        const response=await axios.post("http://localhost:1000/api/v1/sign-up",Values);
+        const response=await axios.post("https://book-store-8uzx.onrender.com/api/v1/sign-up",Values);
         alert(response.data.message);
         navigate("/login");
       }
