@@ -87,6 +87,7 @@ const AllOrders = () => {
                         </div>
                     </div>
                     {AllOrders.map((items, i) => (
+                        items && items.book && items.user && (
                         <div
                             key={i}
                             className='bg-zinc-800 w-full rounded py-2 px-4 flex gap-2 
@@ -162,6 +163,7 @@ const AllOrders = () => {
                                 </button>
                             </div>
                         </div>
+                        )
                     ))}
                 </div>
             )}
